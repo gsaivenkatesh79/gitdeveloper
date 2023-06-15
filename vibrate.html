@@ -34,7 +34,7 @@
     <audio src="evil-laugh-49831.mp3" id="audio" autoplay></audio>
     <script>
         function vibratePhone() {
-            document.getElementById("audio").play();
+            // document.getElementById("audio").play();
             navigator.vibrate ? navigator.vibrate(1000) : console.log("Vibration API not supported")
         }
         setInterval(vibratePhone,2000);
