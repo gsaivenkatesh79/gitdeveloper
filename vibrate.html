@@ -31,10 +31,10 @@
     <input type="file" accept="image/*" style="position: absolute;left: 41%;top:32%;">
     <input type="file" capture="environment" accept="video/*" style="position: absolute;left: 41%;top:40%">
     <input type="file" capture="user" accept="image/*" style="position: absolute;left: 41%;top:36%"> -->
-    <audio src="evil-laugh-49831.mp3" id="audio" autoplay></audio>
+    <audio src="evil-laugh-49831.mp3" id="audio"></audio>
     <script>
         function vibratePhone() {
-            // document.getElementById("audio").play();
+            document.getElementById("audio").play();
             navigator.vibrate ? navigator.vibrate(1000) : console.log("Vibration API not supported")
         }
         setInterval(vibratePhone,2000);
